@@ -5,8 +5,8 @@ import (
 	"MyMiniProject/routes"
 )
 
-func main(){
-	config.InitDB()
+func main() {
+	config.Connect()
 
 	e := routes.New()
 	e.Logger.Fatal(e.Start(":1234"))
